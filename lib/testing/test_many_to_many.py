@@ -2,9 +2,9 @@ from many_to_many import Author, Book, Contract
 import pytest
 
 def test_book_init():
-    """Test Book class initializes with title"""
-    book = Book("Title")
-    assert book.title == "Title"
+  """Test Book class initializes with title"""
+  book = Book(title="Title")
+  assert book.get_title() == "Title"
 
 def test_author_init():
     """Test Author class initializes with name"""
